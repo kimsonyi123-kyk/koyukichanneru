@@ -1,0 +1,6 @@
+ja:
+  headline:
+    recent_posts: '最新記事'      # 比默认的“最近の投稿”更专业
+    announcement: 'お知らせ'      # 标准日语
+    aside_webinfo: 'サイト情報'   # 标准日语
+    newest_comments: '最新のコメント'
