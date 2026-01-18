@@ -1,0 +1,11 @@
+#footer {
+    background: #260303 !important; /* !important 意思是强制生效 */
+    color: white; /* 文字颜色改白 */
+}
+
+button[type="button"] {
+    background-color: #260303 !important; /* !important 意思是强制生效 */
+    color: white; /* 文字颜色改白 */
+	border: none;
+	border-radius: 5px;
+}
