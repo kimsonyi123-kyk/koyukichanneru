@@ -59,7 +59,7 @@ social:
 # Image Settings
 # --------------------------------------
 
-favicon: /img/favicon.png
+favicon: /img/favicon.ico
 
 avatar:
   img: /img/avatar.jpg
@@ -1041,9 +1041,11 @@ inject:
     # using customized css sheet
     - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
-    - '<script src="https://cdn.jsdelivr.net/npm/oh-my-live2d"></script>'
+  - '<script src="https://cdn.jsdelivr.net/npm/oh-my-live2d@0.4.0"></script>'
+  - '<script src="/js/live2d_jp.js"></script>'
+    # - '<script> OML2D.loadOml2d({ dockedPosition: "left", models: [ { path: "/models/miku25/21miku_night_3.0_f_t01.model3.json",  scale: 0.1,  position: [0, 100], stageStyle: { height: 480, width: 270 } } ] });</script>'
     
-    - '<script> OML2D.loadOml2d({ dockedPosition: "left", models: [ { path: "/models/miku25/21miku_night_3.0_f_t01.model3.json",  scale: 0.1,  position: [0, 100], stageStyle: { height: 480, width: 270 } } ] });</script>'
+    
     
 # CDN Settings
 # Don't modify the following settings unless you know how they work
