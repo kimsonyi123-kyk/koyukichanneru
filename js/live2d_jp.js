@@ -31,7 +31,7 @@ OML2D.loadOml2d({
       }
     },
 	// 复制内容时的吐槽
-    copyTips: {
+	copyTips: {
       message: ["何かをコピーしましたね？覚えましたよ！"] 
     }
   }
