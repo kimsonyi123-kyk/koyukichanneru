@@ -277,7 +277,12 @@ footer:
 # --------------------------------------
 
 aside:
-  aside:
+  enable: true
+  hide: false
+  button: true
+  mobile: true
+  position: right
+    
   card_author:
     enable: true
     description:
@@ -1033,9 +1038,15 @@ inject:
     - '<style>#page-header { background: #260303 url("/img/bg_index.jpg") no-repeat center bottom !important; background-size: contain !important; background-attachment: scroll !important; }</style>'
     # post card transparency setting, bold, Mincho font assignment
     - '<style>:root { --card-bg: rgba(255, 255, 255, 0.6) !important; } body { font-family: "Noto Serif JP", serif !important; font-weight: bold !important; }</style>'
+    # using customized css sheet
+    - '<link rel="stylesheet" href="/css/custom.css">'
   bottom:
     # - <script src="xxxx"></script>
-
+    # 引入 OML2D 核心库
+    - <script src="https://unpkg.com/oh-my-live2d@latest"></script>
+    # 配置并启动小人
+    - '<script> OML2D.loadOml2d({ dockedPosition: "left",  models: [ { path: "/models/miku25/21miku_night_3.0_f_t01.model3.json", scale: 0.1, position: [0, 100], stageStyle: { height: 480, width: 270}}]});</script>'
+    
 # CDN Settings
 # Don't modify the following settings unless you know how they work
 CDN:
